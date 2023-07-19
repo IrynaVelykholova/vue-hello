@@ -12,10 +12,14 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app">
-        <h1 class="text-center mt-5">{{ messaggio }}</h1>
-    </div>
     <!-- Stampare a schermo un messaggio all’interno di un h1, utilizzando i data. -->
+    <div id="app">
+        <h1 class="text-center mt-5"
+        :class="titleClass">{{ messaggio }}</h1>
+    </div>
+
+    
+    
     <script src="main.js"></script>
 </body>
 </html>

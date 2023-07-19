@@ -3,7 +3,8 @@
 Vue.createApp({
     data() {
         return {
-            messaggio: "Ciao, sono un messaggio stampato con vue js!"
+            messaggio: "Ciao, sono un messaggio stampato con vue js!",
+            titleClass: "text-danger",
         }
     }
 }).mount("#app")
