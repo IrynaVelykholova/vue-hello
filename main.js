@@ -4,7 +4,24 @@ Vue.createApp({
     data() {
         return {
             messaggio: "Ciao, sono un messaggio stampato con vue js!",
-            titleClass: "text-danger",
+            titleClass: "text-danger" + " " + "text-blue",
+            titleId: "titolo",
+            btnClass: "btnImg",
+        }
+    },
+    methods: {
+        miaFunzione() {
+            console.log("Ciaone");
+            console.log(this.messaggio);
+            this.messaggio =  this.messaggio + " " + "BENVENUTO";
+            this.cambiaColore("primary");
+        },
+        cambiaColore(colore) {
+            let nuovoColore = "danger";
+            if (colore) {
+                nuovoColore = colore;
+            }
+            this.titleClass = "text-" + nuovoColore;
         }
     }
 }).mount("#app")
