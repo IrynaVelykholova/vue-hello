@@ -6,7 +6,7 @@ Vue.createApp({
             messaggio: "Ciao, sono un messaggio stampato con vue js!",
             titleClass: "text-danger" + " " + "text-blue",
             titleId: "titolo",
-            btnImg: "poggers.png.webp",
+            img: "poggers.png.webp",
         }
     },
     methods: {
